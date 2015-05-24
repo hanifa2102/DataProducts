@@ -1,0 +1,55 @@
+---
+title       : 
+subtitle    : 
+author      : 
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+
+## Project Overview
+
+The Shiny App shows the climate variables collected in New york City. Users can filter to see the barplots by either the month or the 
+climate variable (Ozone,Solar.R,Wind,Temp)
+
+---
+## Details
+
+Quoted from R's documentation when 
+```{r,echo=FALSE,eval=FALSE}
+?airquality
+```
+Daily readings of the following air quality values for May 1, 1973 (a Tuesday) to September 30, 1973.
+-Ozone: Mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island
+-Solar.R: Solar radiation in Langleys in the frequency band 4000-7700 Angstroms from 0800 to 1200 hours at Central Park
+-Wind: Average wind speed in miles per hour at 0700 and 1000 hours at LaGuardia Airport
+-Temp: Maximum daily temperature in degrees Fahrenheit at La Guardia Airport.
+
+---
+## Data set Overview
+
+Here is the overview of the dataset.
+
+```{r , echo=FALSE}
+head(airquality)
+summary(airquality)
+```
+
+---
+## Errors Made
+
+- Usuage of reactive functions were neccessary.
+
+---
+## Conclusion
+- Writing a simple application like this, can help to reduce repetive tasks.
+- Putting it on a webpage, literally opens up this application to anyone (even layman) to be able to use R functions.
+
+
+
+
